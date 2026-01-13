@@ -14,16 +14,18 @@ export const Portfolio = () => {
         <div className="mb-16 text-center">
           <h2 className="text-4xl font-light tracking-tighter mb-2">Portfolio</h2>
           <div className="h-[1px] w-20 bg-black mx-auto"></div>
-        </div>
+         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-          {PROJECTS.map((project) => (
-            <div key={project.id} onClick={() => setSelectedProject(project)}>
-               <ProjectCard project={project} />
-            </div>
-          ))}
-        </div>
-      </div>
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+         {PROJECTS.map((project) => (
+         <ProjectCard 
+         key={project.id} 
+         project={project} 
+         onClick={() => setSelectedProject(project)} 
+         />
+         ))}
+         </div>
+         </div>
 
       {/* MODAL DE GALERÍA */}
       <GalleryModal 
