@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Portfolio Personal",
-  description: "Fotografía personal",
+  description: "Fotografía Profesional by Florencia Salvatierra",
 };
 
 export default function RootLayout({
