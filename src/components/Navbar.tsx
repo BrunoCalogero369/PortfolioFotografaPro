@@ -1,12 +1,11 @@
 'use client'
 import { useState } from 'react';
 import { AboutModal } from '@/components/Aboutmodal';
-import { Instagram, MessageCircle } from 'lucide-react';
+import { Instagram, MessageCircle, Heart } from 'lucide-react';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); 
   const [isAboutOpen, setIsAboutOpen] = useState(false); 
-
   return (
     <>
       {/* CAPA INVISIBLE (Cierra el dropdown de contacto si clicas fuera) */}
@@ -18,9 +17,10 @@ export const Navbar = () => {
       )}
 
       <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 text-white bg-gradient-to-b from-black/70 to-transparent">
-        <div className="text-xl font-bold tracking-tighter">
-          Mi Espacio Personal
-        </div>
+         <div className="text-xl font-bold tracking-tighter flex items-center gap-2">
+         <span>Mi Espacio</span>
+         <Heart size={22} className="fill-current text-red-500" />
+         </div>
         
         <div className="flex gap-8 items-center text-sm tracking-widest font-light">
           
@@ -46,7 +46,7 @@ export const Navbar = () => {
                 <ul className="flex flex-col text-xs">
   <li>
     <a 
-      href="https://www.instagram.com/floorsalvatierraa/" 
+      href="https://www.instagram.com/florenciasalvatierra.photo/" 
       target="_blank" 
       className="flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition group"
     >

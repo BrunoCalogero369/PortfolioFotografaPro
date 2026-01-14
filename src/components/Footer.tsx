@@ -15,7 +15,7 @@ export const Footer = () => {
         {/* LINKS RÁPIDOS */}
         <div className="flex gap-8 mb-12">
           <a 
-            href="https://www.instagram.com/floorsalvatierraa/" 
+            href="https://www.instagram.com/florenciasalvatierra.photo/" 
             target="_blank" 
             className="hover:text-pink-500 transition-colors flex items-center gap-2 text-sm tracking-widest uppercase opacity-70 hover:opacity-100"
           >

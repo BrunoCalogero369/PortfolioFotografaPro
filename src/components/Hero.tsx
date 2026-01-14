@@ -6,7 +6,7 @@ export const Hero = () => {
       {/* IMAGEN DE FONDO */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/foto4.jpg"
+          src="/trabajo1/pic14.jpg"
           alt="Fotografía Portfolio"
           fill
           priority

@@ -18,6 +18,13 @@ export const metadata: Metadata = {
   description: "Fotografía Profesional by Florencia Salvatierra",
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1, // Esto evita que el iPhone haga zoom automático al tocar inputs o botones
+  userScalable: false,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
