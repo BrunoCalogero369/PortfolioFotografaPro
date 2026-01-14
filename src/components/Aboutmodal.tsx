@@ -27,21 +27,31 @@ export const AboutModal = ({ isOpen, onClose }: AboutModalProps) => {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 10 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative bg-white text-black max-w-4xl w-full max-h-[85vh] overflow-hidden rounded-[2rem] shadow-2xl flex flex-col md:flex-row"
+            className="relative bg-white text-black max-w-4xl w-full max-h-[85vh] overflow-hidden rounded-[2rem] shadow-2xl flex flex-col md:flex-row-reverse" 
           >
             
-            {/* BOTÓN CERRAR */}
+            {/* BOTÓN CERRAR - Sobre la foto en PC y Mobile */}
             <button 
               onClick={onClose}
-              className="absolute top-4 right-4 z-20 bg-black/10 hover:bg-black/20 backdrop-blur-md rounded-full p-2 transition-all duration-200"
+              className="absolute top-4 right-4 z-20 bg-black/20 md:bg-white/20 hover:bg-white/30 backdrop-blur-md rounded-full p-2 transition-all duration-200 border border-white/10"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="20" 
+                height="20" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="white" 
+                strokeWidth="2.5" 
+                strokeLinecap="round" 
+                strokeLinejoin="round"
+              >
                 <line x1="18" y1="6" x2="6" y2="18"></line>
                 <line x1="6" y1="6" x2="18" y2="18"></line>
               </svg>
             </button>
 
-            {/* COLUMNA FOTO - Con flex-shrink-0 para que no se mueva en mobile */}
+            {/* COLUMNA FOTO */}
             <div className="w-full md:w-1/2 h-[250px] sm:h-[300px] md:h-auto relative flex-shrink-0">
               <Image
                 src="/fotobio1.jpg"
@@ -53,7 +63,7 @@ export const AboutModal = ({ isOpen, onClose }: AboutModalProps) => {
               />
             </div>
 
-            {/* COLUMNA TEXTO - Con el fix del scroll y el centrado */}
+            {/* COLUMNA TEXTO */}
             <div className="w-full md:w-1/2 p-6 md:p-12 overflow-y-auto flex flex-col bg-white">
               <div className="my-auto pt-4 md:pt-0"> 
                 <h2 className="text-3xl font-light mb-6 tracking-tight italic">Sobre mí</h2>
