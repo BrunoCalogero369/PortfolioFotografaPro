@@ -20,7 +20,7 @@ export const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
       // En mobile, un toque en el div activará el focus (por hover simulado)
       onClick={() => setIsFocused(!isFocused)} 
     >
-      <div className="relative aspect-[4/5] overflow-hidden rounded-xl mb-4 bg-gray-100">
+      <div className="relative aspect-[4/5] overflow-hidden rounded-xl mb-4 bg-gray-100 shadow-[0_0_15px_rgba(0,0,0,0.15)] transition-shadow duration-300 group-hover:shadow-[0_0_25px_rgba(0,0,0,0.3)]">
         <Image
           src={project.coverImage}
           alt={project.title}

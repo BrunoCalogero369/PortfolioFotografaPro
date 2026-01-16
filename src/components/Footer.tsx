@@ -7,7 +7,7 @@ export const Footer = () => {
     <footer className="bg-black text-white py-16 px-8 border-t border-white/5">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         
-        {/* LOGO O NOMBRE */}
+        {/* TITULO */}
         <div className="text-2xl font-bold tracking-tighter mb-8 uppercase">
           Encuentrame aquí ↓
         </div> 
