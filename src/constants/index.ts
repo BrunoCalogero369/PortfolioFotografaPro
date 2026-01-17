@@ -13,7 +13,7 @@ export const PROJECTS: Project[] = [
     title: "Tagliaferro",
     date: "26 de Octubre, 2025",
     location: "En Casa",
-    coverImage: "/trabajo1/pic5.jpg",
+    coverImage: "/trabajo1/pic6.jpg",
     photos: [
       "/trabajo1/pic1.jpg",
       "/trabajo1/pic2.jpg",
@@ -34,18 +34,19 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 2,
-    title: "Naturaleza",
-    date: "25 de Febrero, 2025",
-    location: "Catanzaro, Italia",
-    coverImage: "/trabajo2/ct5.jpg",
+    title: "NeoDoc",
+    date: "02 de Julio, 2025",
+    location: "Estudio Profesional",
+    coverImage: "/trabajo4/neodoc_03.jpg",
     photos: [
-      "/trabajo2/ct1.jpg",
-      "/trabajo2/ct2.jpg",
-      "/trabajo2/ct3.jpg",
-      "/trabajo2/ct4.jpg",
-      "/trabajo2/ct5.jpg",
-      "/trabajo2/ct6.jpg",
-      "/trabajo2/ct7.jpg",
+      "/trabajo4/neodoc_01.jpg",
+      "/trabajo4/neodoc_02.jpg",
+      "/trabajo4/neodoc_03.jpg",
+      "/trabajo4/neodoc_04.jpg",
+      "/trabajo4/neodoc_05.jpg",
+      "/trabajo4/neodoc_06.jpg",
+      "/trabajo4/neodoc_07.jpg",
+      "/trabajo4/neodoc_08.jpg",
     ]
   },
   {
@@ -68,5 +69,20 @@ export const PROJECTS: Project[] = [
       "/trabajo3/rc11.jpg",
     ]
   },
-  
+  {
+    id: 4,
+    title: "Naturaleza",
+    date: "25 de Febrero, 2025",
+    location: "Catanzaro, Italia",
+    coverImage: "/trabajo2/ct5.jpg",
+    photos: [
+      "/trabajo2/ct1.jpg",
+      "/trabajo2/ct2.jpg",
+      "/trabajo2/ct3.jpg",
+      "/trabajo2/ct4.jpg",
+      "/trabajo2/ct5.jpg",
+      "/trabajo2/ct6.jpg",
+      "/trabajo2/ct7.jpg",
+    ]
+  },
 ];
