@@ -43,10 +43,19 @@ export const GalleryModal = ({ project, onClose }: GalleryModalProps) => {
           <motion.div 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="max-w-6xl mx-auto mb-12 text-center text-white"
+            className="max-w-3xl mx-auto mb-16 text-center text-white" // Reduje el max-w para que el texto sea más legible
           >
             <h2 className="text-3xl md:text-5xl font-light italic mb-2">{project.title}</h2>
-            <p className="text-xs tracking-[0.3em] uppercase opacity-50">{project.location}</p>
+            <p className="text-xs tracking-[0.3em] uppercase opacity-50 mb-6">{project.location}</p>
+            
+            {/* NUEVA SECCIÓN DE DESCRIPCIÓN */}
+            {project.description && (
+              <div className="mt-8">
+                <p className="text-sm md:text-base text-gray-300 leading-relaxed font-light max-w-2xl mx-auto border-t border-white/10 pt-8">
+                  {project.description}
+                </p>
+              </div>
+            )}
           </motion.div>
 
           {/* EL GRID ANIMADO */}
